@@ -1,2 +1,2 @@
 # React-For-Beginners-Starter-Files
-Completed the React course (Wes Bos)
+Completed the React course
