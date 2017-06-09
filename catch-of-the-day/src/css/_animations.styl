@@ -5,3 +5,51 @@
   appear Must set transitionAppear={true} on animation component
 */
 
+.order-enter {
+	transition: all 0.5s;
+	transform: translateX(-120%) rotate(1000deg);
+	max-heigh: 0;
+	padding 0 !important;
+}
+
+.order-enter-active {
+	max-height: 60px;
+	padding: 2rem 0 !important;
+	transform: translateX(0) rotate(0deg);
+}
+
+.order-leave {
+	transition: all 0.5s;
+	transform: translateX(0);
+}
+
+.order-leave-active {
+	transform: translateX(120%);
+	max-height: 0;
+	padding: 0;
+}
+
+.count-enter {
+	transition: all .25s;
+	transform: translateY(100%); // start from bottom of the screen
+	padding: 0;
+}
+
+.count-enter-active {
+	transform: translateY(0%); // put it back on the screen
+}
+
+.count-leave {
+	transition: all .25s;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: translateY(0%); // start where it is
+	padding: 0;
+}
+
+.count-leave-active {
+	transform: translateY(-100%); // move it up
+
+}
+
